@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP4SP Official Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to MP4SP Official Website</h1>
+    </header>
+
+    <section class="info">
+        <h2>About MP4SP</h2>
+        <p>
+            MP4SP (MP4 Salvaging Program) is a lightweight tool designed to recover and repair MP4 files. Note that this website and MP4SP is still on construction/development.
+        </p>
+    </section>
+
+    <section class="details">
+        <h3>Features:</h3>
+        <ul>
+            <li>Guaranteed to work.</li>
+            <li>Supports a wide range of MP4 formats</li>
+            <li>User-friendly interface</li>
+        </ul>
+    </section>
+
+    <section class="details">
+        <h3>Known Issues:</h3>
+        <ul>
+            <li>Weird side effects such as glitched imagery or missing sections of the media.</li>
+            <li>Using MaxResolutionMode will cause encoding errors and framerate drops.</li>
+            <li>Unstable build.</li>
+        </ul>
+    </section>
+
+    <section class="download">
+        <button id="download-button">Download Early Access</button>
+        <p id="yeslol">By downloading our program you agree to our terms of services.</p>
+    </section>
+    <footer>
+    <p>&copy; 2025 MP4SP. All rights reserved.</p>
+    </footer>
+    <p id="yeslol">Email us for support at: mainprogramsagent@gmail.com <span id="itme">It'sMe@gmail.com</span></p>
+
+    <script>
+        const button = document.getElementById('download-button');
+    
+        button.addEventListener('click', () => {
+            button.style.backgroundColor = 'red'; // Change color
+            button.textContent = 'Sorry! Currently Unavailable.'; // Change text
+            button.disabled = true; // Disable button
+    
+            // Add the shake animation class
+            button.classList.add('shake');
+    
+            // Remove the animation class after it's done to allow re-triggering
+            setTimeout(() => {
+                button.classList.remove('shake');
+            }, 500); // Duration of the animation in milliseconds
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+#itme {
+    color: red;
+    text-decoration: line-through;
+}
+
+/* Body Styling */
+body {
+    background-color: white;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    margin-top: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #222;
+}
+
+/* Info Section */
+.info, .details {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info h2, .details h3 {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+/* Unordered List */
+.details ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* Download Section */
+.download {
+    margin: 30px 0;
+    text-align: center;
+}
+
+button {
+    padding: 15px 25px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: red;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+#yeslol {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+button.shake {
+    animation: shake 0.5s ease-in-out; /* 0.5s shake animation */
+}
